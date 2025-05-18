@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Alice - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Maria Alice Ferreira Gonzaga</h1>
+            <p class="titulo">Técnica em Desenvolvimento de Sistemas</p>
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="showSection('sobre')">Sobre Mim</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('formacao')">Formação</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('habilidades')">Habilidades</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('idiomas')">Idiomas</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('projetos')">Projetos</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('experiencia')">Experiência</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('contato')">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <section id="sobre" class="section" style="display:none;">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Técnico em Desenvolvimento de Sistemas no SENAI e do Ensino Médio no SESI. Busco aplicar meus conhecimentos em diversas áreas do desenvolvimento e adquirir experiência prática para contribuir com minhas habilidades técnicas e interpessoais.</p>
+        </section>
+
+        <section id="formacao" class="section" style="display:none;">
+            <h2>Formação e Certificações</h2>
+            <ul>
+                <li><strong>2024 - 2025</strong>: SENAI - Curso Técnico em Desenvolvimento de Sistemas (Cursando)</li>
+                <li><strong>2023 - 2025</strong>: SESI - Ensino Médio (Cursando)</li>
+                <li><strong>2024</strong>: Certificação em Privacidade e Proteção de Dados (LGPD)</li>
+                <li><strong>2024</strong>: Certificação em Economia Circular</li>
+                <li><strong>2024</strong>: Certificação em Desvendando o 5G</li>
+            </ul>
+        </section>
+
+        <section id="habilidades" class="section" style="display:none;">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolvimento Front-end: HTML, CSS, JavaScript</li>
+                <li>Desenvolvimento Back-end: C++, Microsoft SQL Server</li>
+                <li>Ferramentas: Visual Studio Code, GitHub, Microsoft Office</li>
+                <li>Design: Canva, Figma</li>
+                <li>Comunicação, Proatividade e Trabalho em Equipe</li>
+            </ul>
+        </section>
+
+        <section id="idiomas" class="section" style="display:none;">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Inglês - Cambridge A2 (Básico)</li>
+                <li>Inglês - Cambridge B1 (Intermediário)</li>
+                <li>Inglês - Cambridge B2 (Intermediário Avançado) - Cursando</li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="section" style="display:none;">
+            <h2>Projetos</h2>
+            <p>Em breve, mostrarei alguns dos meus projetos realizados na área de desenvolvimento de sistemas.</p>
+        </section>
+
+        <section id="experiencia" class="section" style="display:none;">
+            <h2>Experiência</h2>
+            <p>Ainda não possuo experiência profissional, mas estou em busca de minha primeira oportunidade para aplicar meus conhecimentos.</p>
+        </section>
+
+        <section id="contato" class="section" style="display:none;">
+            <h2>Contato</h2>
+            <p>Você pode entrar em contato comigo através do e-mail: <a href="mailto:mariaaliceferreiragonzaga@gmail.com">mariaaliceferreiragonzaga@gmail.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Maria Alice Ferreira Gonzaga</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Esconde todas as seções
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Exibe a seção clicada
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block';
+        }
+
+        // Exibe a seção "Sobre Mim" por padrão
+        showSection('sobre');
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio Lo</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* rosa bem claro */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        audio {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .botao-voltar {
+            background-color: #ce93d8; /* roxo claro */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .botao-voltar:hover {
+            background-color: #ba68c8; /* roxo mais escuro */
+        }
+    </style>
+</head>
+<body>
+    <audio controls>
+        <source src="audiolo.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+    <a class="botao-voltar" href="index.html">Voltar</a>
+</body>
+</html>
